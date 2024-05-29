@@ -3,7 +3,19 @@
 @section('title', 'Show')
 
 @section('content')
-    <div class="container">
-        <h1>Qui c'è lo show</h1>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col">
+                <h1>Fumetto scelto: <br> {{ $comic->title }}</h1>
+            </div>
+            <div class="col text-center">
+                <a href="{{ route('comics.index') }}" class="btn btn-primary">Home</a>
+            </div>
+        </div>
+        <p>
+        {{ $comic->description }}
+        </p>
+        <img src="{{ $comic->thumb }}" alt="comics cover"> 
     </div>
+
 @endsection

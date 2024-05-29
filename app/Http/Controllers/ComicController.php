@@ -18,9 +18,9 @@ class ComicController extends Controller
     }
     
     //show
-    public function show()
+    public function show(Comic $comic)
     {
-        return view('comics.show');
+        return view('comics.show', compact('comic'));
     }
 
     //create
