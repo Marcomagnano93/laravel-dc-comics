@@ -25,4 +25,10 @@ class ComicController extends Controller
     {
         return view('comics.create');
     }
+
+    //store
+    public function store()
+    {
+        dump('stai prendendo i dati dal form create');
+    }
 }
