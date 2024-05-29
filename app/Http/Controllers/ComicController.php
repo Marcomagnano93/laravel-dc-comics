@@ -13,12 +13,16 @@ class ComicController extends Controller
     {
         return view('comics.index');
     }
-
+    
     //show
     public function show()
     {
-
-
         return view('comics.show');
+    }
+
+    //create
+    public function create()
+    {
+        return view('comics.create');
     }
 }
