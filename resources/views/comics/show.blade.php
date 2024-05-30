@@ -11,6 +11,9 @@
             <div class="col text-center">
                 <a href="{{ route('comics.index') }}" class="btn btn-primary">Home</a>
             </div>
+            <div class="col">
+                <a href="{{ route('comics.edit', $comic ) }}" class="btn btn-info">Modifica</a>
+            </div>
         </div>
         <p>
         {{ $comic->description }}
