@@ -9,7 +9,7 @@
                 <h1>Comics:</h1>
             </div>
             <div class="col d-flex flex-row-reverse">
-                <a href="{{ route('comics.create') }}" class="btn btn-success">Aggiungi un fumetto</a>
+                <a href="{{ route('comics.create') }}" class="btn btn-warning">Aggiungi un fumetto</a>
             </div>
         </div>
         

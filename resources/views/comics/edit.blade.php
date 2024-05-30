@@ -41,8 +41,13 @@
             </div>
             <button type="submit" class="btn btn-info">Salva modifiche</button>
         </form>
-        <div class="my-4">
-            <a href="{{ route('comics.index') }}" class="btn btn-primary">Home</a>
+        <div class="my-4 d-flex gap-3">
+            <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+                @method('DELETE')
+                @csrf
+                <button class="btn btn-danger btn">Elimina</button>
+            </form>
+            <a href="{{ route('comics.index') }}" class="btn btn-primary">Torna alla Home</a>
         </div>
     </div>
 @endsection
