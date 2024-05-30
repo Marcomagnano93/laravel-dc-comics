@@ -3,8 +3,16 @@
 @section('title', 'Fumetti')
 
 @section('content')
-    <div class="container">
-        <h1>Comics:</h1>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col">
+                <h1>Comics:</h1>
+            </div>
+            <div class="col">
+                <a href="{{ route('comics.create') }}" class="btn btn-success">Aggiungi un fumetto</a>
+            </div>
+        </div>
+        
     </div>
     <div class="container">
         <div class="row">

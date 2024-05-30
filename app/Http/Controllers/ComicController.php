@@ -30,8 +30,12 @@ class ComicController extends Controller
     }
 
     //store
-    public function store()
+    public function store(Request $request)
     {
-        dump('stai prendendo i dati dal form create');
+        $form_new_comic = $request->all();
+        
+        $new_comic = Comic::create($form_new_comic);
+
+        return redirect()->route('comics.show', $new_comic);
     }
 }
